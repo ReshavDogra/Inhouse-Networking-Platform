@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header sub-header-faq">
+        <nav>
+            <a href="home.html"><img src="images/ucoe_logo.png" alt="UCOE Logo"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT US</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="about"><h1>FREQUENTLY ASKED QUESTIONS</h1></div>
+    </section>
+
+    <!----------FAQ Page-------->
+
+
+
+    <section class="faq">
+        <div class="faq">
+            <h2> FREQUENTLY ASKED QUESTIONS (FAQ) </h2>
+            <div class="accordion">
+                <div class="icon-faq">
+                    <!-- <i class="fa fa-times"></i> -->
+                </div>
+                <h5>Question 1</h5>
+            </div>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem impedit officiis nam, magni illum sequi maiores sed exercitationem vitae accusamus veritatis modi eius, aspernatur quasi praesentium ullam at non?</p>
+            </div>
+            <div class="accordion">
+                <div class="icon-faq"></div>
+                <h5>why do we use this ?</h5>
+            </div>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem impedit officiis nam, magni illum sequi maiores sed exercitationem vitae accusamus veritatis modi eius, aspernatur quasi praesentium ullam at non?</p>
+            </div>
+            <div class="accordion">
+                <div class="icon-faq"></div>
+                <h5>where does it comes from ?</h5>
+            </div>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem impedit officiis nam, magni illum sequi maiores sed exercitationem vitae accusamus veritatis modi eius, aspernatur quasi praesentium ullam at non?</p>
+            </div>
+            <div class="accordion">
+                <div class="icon-faq"></div>
+                <h5>how we use this ?</h5>
+            </div>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem impedit officiis nam, magni illum sequi maiores sed exercitationem vitae accusamus veritatis modi eius, aspernatur quasi praesentium ullam at non?</p>
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- <hr>    added -->
+
+    <!-------FOOTER--------->
+
+        <section class="footer">
+            <h4>ABOUT US</h4>
+            <P>We are a group of 2nd Year Comps students and have made this Website with much love and hardwork. If you like our work or have any comments about our work feel free to wrtite us on our social media handles.</P>
+            <div class="icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="far fa-heart" style="color: #f44336;"></i> by Reshav Dogra</p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+<!-- javascript for toggle menu -->
+
+<script>
+    var navLinks = document.getElementById("nav-links");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

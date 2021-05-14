@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #151320; */
+    background-color: #e9c581;
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    font-family: 'Poppins',sans-serif;
+}
+.cards{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(400px,1fr)); */
+    grid-template-columns: auto 30% 30% ;
+    padding: 20px;
+    /* grid-gap: 40px; */
+    grid-gap: 60px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+/* .card1>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #0100ec,
+        #fb36f4
+    );
+} */
+/* .card2>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #2bdce3,
+        #42ffdb
+    );
+}
+.card3>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #ffab1d,
+        #f8501c
+    );
+} */
+.details{
+    padding: 20px 10px;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.details>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.profile-container{
+	height: 20px;
+	position: relative;
+	/* border: 3px solid green; */
+}
+
+.profile-submit{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	/* left: 50%; */
+	/* -ms-transform: translate(-50%, -50%); */
+	/* transform: translate(-50%, -50%); */
+}
+
+.profile-btn{
+	width: 100%;
+	text-align: right;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	/* transition: .3s; */
+}
+
+.profile-btn:hover{
+    background-color: #27ae60;
+}

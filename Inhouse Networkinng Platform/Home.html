@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="images/ucoe_logo.png" alt="UCOE Logo"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT US</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Welcome To Universal College Of Engineering</h1>
+        <!-- <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae rerum maiores ab amet sit commodi at a corrupti <br> nulla quas obcaecati molestiae quisquam deserunt sunt dignissimos, delectus deleniti optio minima?</p> -->
+        <a href="https://universalcollegeofengineering.edu.in/" class="hero-btn">VISIT US</a>
+    </div>
+
+    </section>
+
+    <!-- ----------COURSES--------->
+        <section class="course">
+            <h1>Courses We Offer</h1>
+
+            <div class="row">
+                <div class="course-col" onclick="location.href='CE.html'">
+                    <h3>COMPUTER SCIENCE ENGINEERING </h3>
+                    <p>Vision-To be recognised globally as a department provides quality technical education that eventually caters to helping and serving the community</p>
+                </div>
+                <div class="course-col" onclick="location.href='ITE.html'">
+                    <h3>INFORMATION TECHNOLOGY ENGINEERING</h3>
+                    <p>Vision-Impart quality education to create world-class technocrats and entrepreneurs with new ideas and innovations to meet industry expectations and uplifting human lives</p>
+                </div>
+                <div class="course-col" onclick="location.href='EE.html'">
+                    <h3>ELECTRONICS ENGINEERING</h3>
+                    <p>Electronic engineering is an electrical engineering discipline which utilizes nonlinear and active electrical components to design electronic circuits, devices, integrated circuits and their systems. The discipline typically also designs passive electrical components, usually based on printed circuit boards.</p>
+                </div>
+                <div class="course-col" onclick="location.href='CIVILE.html'">
+                    <h3>CIVIL ENGINEERING</h3>
+                    <p>Vision-To provide opportunity to display creativity, out-of–the-box thinking and innovativeness, all aimed at providing cutting edge technology for sustainable development</p>
+                </div>
+                <div class="course-col" onclick="location.href='ETE.html'">
+                    <h3>ELECTRONICS AND TELECOMMUNICATIONS ENGINEERING</h3>
+                    <p>The field of Electronics and Telecommunication Engineering is the utilization of complex apparatus and electronic mechanisms to produce state of the art telecommunication systems capable of processing information at incredible speeds.</p>
+                </div>
+                <div class="course-col" onclick="location.href='ASAH.html'">
+                    <h3>APPLIED SCIENCE & HUMANITIES</h3>
+                    <p>Vision-The department of Applied Science and Humanities is committed to dynamically integrate the components of sciences, humanities and engineering to groom the students to become globally acknowledged professionals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h1>REQUEST INFORMATION EDIT</h1>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate eius quo animi saepe sequi consequuntur omnis iste repellendus, quae ipsa suscipit doloremque libero odit at distinctio magni, numquam facere.</p> -->
+            <a href="login.html" class="hero-btn">EDIT PROFILES</a>
+        </section>
+
+        <hr>    <!-- added -->
+
+    <!-------FOOTER--------->
+
+        <section class="footer">
+            <h4>ABOUT US</h4>
+            <P>We are a group of 2nd Year Comps students and have made this Website with much love and hardwork. If you like our work or have any comments about our work feel free to wrtite us on our social media handles.</P>
+            <div class="icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="far fa-heart" style="color: #f44336;"></i> by Reshav Dogra</p>
+        </section>
+
+
+
+
+
+
+
+
+
+ <!-- javascript for toggle menu -->
+
+<script>
+    var navLinks = document.getElementById("nav-links");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

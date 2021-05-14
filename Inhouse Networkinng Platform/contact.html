@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header sub-header-contact">
+        <nav>
+            <a href="home.html"><img src="images/ucoe_logo.png" alt="UCOE Logo"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT US</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="about"><h1>CONTACT US</h1></div>
+    </section>
+
+    <!----------CONTACT US-------->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.4292000201385!2d72.91444451438082!3d19.35055984831433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a56dd564fc65%3A0xdedc6f62731ee7eb!2sUniversal%20College%20of%20Engineering%20Mumbai!5e0!3m2!1sen!2sin!4v1619596180285!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>
+                        <h5>Near Bhajansons & Punyadham,
+                            Kaman Bhiwandi Road</h5>
+                        <p>Vasai, Palghar, Maharashtra-401208 </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                        <h5>8407979167 /
+                            8007090722 /
+                            8007478659</h5>
+                        <p>Monday to Saturday 9.30 a.m. to 5.00 p.m. <br>
+                            Sunday 10.00 a.m. to 3.00 p.m</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                        <h5>info.ucoe@universal.edu.in</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+                <br>
+                <br>
+                <br>
+                <h2 style="font-style: italic;">DEVELOPERS CONTACT :-</h2>
+                <hr style="border: 5px solid red;">
+                <pre><p>Reshav Dogra                               Yash Rane                                 Aditya Singh                               Yash Jadhav
+7276899687                                   8422938422                              9833117910                                   9021719573
+reshavdogra007@gmail.com   abhiyash.rane@gmail.com    rushtoaditya@gmail.com       yash.m.jadhav@universal.edu.in</p></pre>
+<hr style="border: 5px solid red;">
+<br>
+<br>
+<br>
+            </div>
+            <div class="comment-box">
+                <h3>Leave A Comment or Ask A Query</h3>
+                <form class="comment-form" action="">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email Address" required>
+                    <input type="tel" placeholder="Enter Your Phone Number" required>
+                    <!-- <input type="text" placeholder="Enter Your query" required> -->
+                    <textarea rows="8" placeholder="Your Comment"required></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- <hr>    added -->
+
+    <!-------FOOTER--------->
+
+        <section class="footer">
+            <h4>ABOUT US</h4>
+            <P>We are a group of 2nd Year Comps students and have made this Website with much love and hardwork. If you like our work or have any comments about our work feel free to wrtite us on our social media handles.</P>
+            <div class="icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="far fa-heart" style="color: #f44336;"></i> by Reshav Dogra</p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+<!-- javascript for toggle menu -->
+
+<script>
+    var navLinks = document.getElementById("nav-links");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background: #ffe9ee; */
+}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)),url(images/ucoe_1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky; added
+    top: 0;  added */
+}
+nav img{
+    /* width: 150px; */
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    /* font-size: 13px; */
+    font-size: 18px;
+    font-weight: bold; /* added */
+    line-height: 50px; /* added */
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    /* background: #f44336;  */
+    background: #c4190d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 42px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.text-box h1::after{ /* added */
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #c4190d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.text-box h1:hover::after{ /* added */
+    width: 90%;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block
+    }
+    .nav-links{
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-lin ul{
+        padding: 30px;
+    }
+}
+
+
+/* ---------COURSES--------- */
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.course h1::after{ /* added */
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #c4190d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.course h1:hover::after{ /* added */
+    width: 65%;
+}
+p{
+    color: #777; 
+    /* color: #fff; */
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 10px 120px 10px 120px; /* added */
+}
+.row h3::after{ /* added */
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #c4190d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.row h3:hover::after{ /* added */
+    width: 45%;
+}
+.course-col{
+    flex-basis: 31%;
+    /* background: #fff3f3 */
+    background: #ffe9ee; /* added */
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    /* font-weight:bold; */ /* added */
+    margin: 10px 0px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.cta{
+    /* margin: 100px auto; */
+    margin: 50px auto;  /* added */
+    /* width: 80%; */
+    width: 50%; /* added */
+    /* background-image: url(images/banner.jpg); */
+    background-image: linear-gradient(#9a2494,#e66c95);  /* added */
+    background-position: center;
+    background-size: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    font-weight: bold; /* added */
+}
+.cta h1::after{ /* added */
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #c4190d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.cta h1:hover::after{ /* added */
+    width: 50%;
+}
+.cta p{ /* added */
+    color: #fff;
+}
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    /* padding: 30px 0; */
+    /* background-color: rgb(204, 188, 188); */  /* added */
+    /* background-color: #ffe9ee;  */
+    background-color: black;  /* added */
+
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #fff;  /* added */
+    font-weight: bold;  /* added */
+}
+.footer h4::after{ /* added */
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #c4190d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.footer h4:hover::after{ /* added */
+    width: 10%;
+}
+.footer p{
+    color: #fff;  /* added */
+}
+.icons .fab{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+/* .far fa-heart{
+    color: #f44336;
+} */
+@media(max-width: 700px){
+    .footer h4{
+        font-size: 20px;
+    }
+}
+
+
+/* ---------ABOUT US--------- */
+
+.sub-header{
+    /* height: 50vh; */
+    height: 100vh; /* added */
+    width: 100%;
+    background-image: url(images/about_us.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+.sub-header h1{
+    /* margin-bottom: 100px; */
+    margin-bottom: 10px;
+}
+.about{  /* added */
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.about h1::after{ /* added */
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #c4190d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.about h1:hover::after{ /* added */
+    width: 100%;
+}
+@media(max-width: 700px){
+    .about h1{
+        font-size: 24px;
+    }
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+@media(max-width: 700px){
+    .about-us h1{
+        font-size: 24px;
+    }
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    text-align: center;
+}
+.about-col h1::after{ /* added */
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #c4190d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.about-col h1:hover::after{ /* added */
+    width: 85%;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0%;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+.red-btn:hover{
+    color: #fff;
+}
+
+/* ---------CONTACT US-------  */
+
+.sub-header-contact{
+    height: 100vh; /* added */
+    width: 100%;
+    background-image: url(images/contact-us.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+/* .contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+} */
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: left;
+    text-align: center; /* added */
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    outline: none;
+    border: none;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    background: #f0f0f0;
+}
+.comment-form{
+    margin: 10px 0;
+}
+
+/* ------------FAQ--------------- */
+
+.sub-header-faq{
+    height: 100vh; /* added */
+    width: 100%;
+    background-image: url(images/FAQ.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* import google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+.faq{
+    font-family: 'Baloo Bhaina 2', cursive ;
+    /* background-color: #eee; */
+    /* width: 40%; */
+    width: 70%;  /* added */
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;  /* added */
+    /* align-items: center; */
+}
+.faq h2{
+    color: hotpink;
+    position: relative;
+    width: 23rem;
+    font-weight: bold;
+}
+.faq h2::after{ /* added */
+    content: '';
+    width: 0;
+    height: 2px;
+    /* background: #c4190d; */
+    background: hotpink; /* added */
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.faq h2:hover::after{ /* added */
+    width: 80%;
+}
+.accordion{
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #6db5ff;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    text-align: center; /* added */
+}
+.accordion .icon-faq{
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    /* background: url(images/up.png) no-repeat 8px 7px ; */
+    background: no-repeat 8px 7px ; /* added */
+    border-radius: 50%;
+    float: left;
+    transition: all 0.5s ease-in;
+}
+.accordion h5{
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #1f5c9a;
+}
+.panel{
+padding: 0 15px;
+border-left: 1px solid #6db5ff;
+margin-left: 25px;
+font-size: 14px;
+text-align: justify;
+overflow: hidden;
+max-height: 300px;
+transition: all 0.5s ease-in;
+}
+
+/* ---------CE--------- */
+
+.sub-header-CE{
+    height: 100vh; /* added */
+    width: 100%;
+    background-image: url(images/CE.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* ---------ITE--------- */
+
+.sub-header-ITE{
+    height: 100vh; /* added */
+    width: 100%;
+    background-image: url(images/ITE.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* ---------EE--------- */
+
+.sub-header-EE{
+    height: 100vh; /* added */
+    width: 100%;
+    background-image: url(images/EE.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* ---------CIVILE--------- */
+
+.sub-header-CIVILE{
+    height: 100vh; /* added */
+    width: 100%;
+    background-image: url(images/CIVILE.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* ---------ETE--------- */
+
+.sub-header-ETE{
+    height: 100vh; /* added */
+    width: 100%;
+    background-image: url(images/ETE.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* ---------ASAH--------- */
+
+.sub-header-ASAH{
+    height: 100vh; /* added */
+    width: 100%;
+    background-image: url(images/ASAH.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* ---------studentsCE--------- */
+
+.sub-header-studentsCE{
+    height: 100vh; /* added */
+    width: 100%;
+    background-image: url(images/studentsCE.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* ---------facultyCE--------- */
+
+.sub-header-facultyCE{
+    /* height: 100vh; added */
+    height: 17vh;
+    width: 100%;
+    background-image: url(images/black.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* ---------facultylist--------- */
+
+.facultylist{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
